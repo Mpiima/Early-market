@@ -1,0 +1,13 @@
+<?php
+session_start();
+include("connect.php");
+$rolenumber=$_SESSION["rolenumber"];
+$page=$_POST["page"];
+if($page=="del_item"){include("del_item.php");}
+elseif($page=="subcatid"){include("prodcat.php");}
+elseif($page=="submit_attributes"){include("submit_attributes.php");}
+elseif($page=="submit_subcat"){include("prodcat2.php");}
+elseif($page=="submit_attrs"){include("sub_attrs.php");}
+elseif($page=="submit_mults"){include("submit_mults.php");}
+elseif($page=="split_id"){include("split_val.php");}
+elseif($page=="pplan"){include("pplan.php");}
